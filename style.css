@@ -53,3 +53,21 @@ footer {
     height:auto !important;
     margin:20px auto !important;
 }
+
+.map-btn{
+    display:block;
+    width:220px;
+    margin:15px auto;
+    padding:12px;
+    text-align:center;
+    background:#d32f2f;
+    color:#fff;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.map-btn:hover{
+    background:#b71c1c;
+}
