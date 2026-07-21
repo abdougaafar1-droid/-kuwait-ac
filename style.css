@@ -1,79 +1,173 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #f2f8ff;
-    color: #222;
-    text-align: center;
+/* ==========================
+   شركة الكويت للتبريد والتكييف
+   الإصدار 2.0
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-header {
-    background: #0066cc;
-    color: white;
-    padding: 30px 15px;
+body{
+    font-family:Arial,Tahoma,sans-serif;
+    background:#eef5fb;
+    color:#222;
+    direction:rtl;
+    text-align:center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 28px;
+/* الشعار */
+
+.logo{
+    width:120px;
+    display:block;
+    margin:20px auto;
 }
 
-section {
-    background: white;
-    margin: 15px;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px #ccc;
+/* الهيدر */
+
+header{
+    background:#0066cc;
+    color:#fff;
+    padding:35px 20px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
 }
 
-h2 {
-    color: #0066cc;
+header h1{
+    font-size:30px;
+    margin-bottom:10px;
 }
 
-a {
-    color: #0066cc;
-    text-decoration: none;
+header p{
+    font-size:18px;
 }
 
-.btn {
-    display: block;
-    background: #0084ff;
-    color: white;
-    text-align: center;
-    padding: 12px;
-    margin: 10px auto;
-    border-radius: 8px;
-    max-width: 300px;
-    font-weight: bold;
+/* الأقسام */
+
+section{
+    background:#fff;
+    margin:18px;
+    padding:22px;
+    border-radius:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,.10);
 }
 
-footer {
-    background: #0066cc;
-    color: white;
-    padding: 15px;
-    margin-top: 20px;
+section h2{
+    color:#0066cc;
+    margin-bottom:18px;
 }
 
-.logo {
-    display: block;
-    width: 120px;
-    max-width: 120px;
-    height: auto;
-    margin: 20px auto;
+/* الوكلاء */
+
+.brands{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin:20px 0;
 }
 
-.map-btn {
-    display: block;
-    width: 220px;
-    margin: 15px auto;
-    padding: 12px;
-    text-align: center;
-    background: #d32f2f;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    font-weight: bold;
+.brand{
+    width:110px;
+    background:#f7f7f7;
+    border-radius:15px;
+    padding:18px 10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.10);
+    transition:.3s;
 }
 
-.map-btn:hover {
-    background: #b71c1c;
+.brand:hover{
+    transform:translateY(-5px);
+}
+
+.brand h3{
+    margin-top:10px;
+    font-size:18px;
+    color:#0066cc;
+}
+
+/* الأزرار */
+
+.btn{
+    display:block;
+    width:90%;
+    max-width:320px;
+    margin:12px auto;
+    padding:14px;
+    border-radius:12px;
+    text-decoration:none;
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+/* اتصال */
+
+.btn{
+    background:#007bff;
+}
+
+/* واتساب */
+
+.whatsapp{
+    background:#25D366;
+}
+
+/* فيسبوك */
+
+.facebook{
+    background:#1877F2;
+}
+
+/* الخريطة */
+
+.map{
+    background:#d32f2f;
+}
+
+/* حركة */
+
+.btn:hover{
+    opacity:.90;
+    transform:scale(1.02);
+}
+
+/* الفوتر */
+
+footer{
+    margin-top:25px;
+    background:#0066cc;
+    color:#fff;
+    padding:20px;
+    font-size:15px;
+}
+
+/* الموبايل */
+
+@media(max-width:600px){
+
+header h1{
+    font-size:24px;
+}
+
+header p{
+    font-size:16px;
+}
+
+.brand{
+    width:95px;
+}
+
+.btn{
+    font-size:16px;
+}
+
+.logo{
+    width:95px;
+}
+
 }
