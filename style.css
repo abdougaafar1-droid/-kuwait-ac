@@ -1,119 +1,173 @@
-body{
+/* ==========================
+   شركة الكويت للتبريد والتكييف
+   الإصدار 2.0
+========================== */
+
+*{
     margin:0;
-    font-family:Arial,sans-serif;
-    background:#f4f8fc;
-    color:#333;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,Tahoma,sans-serif;
+    background:#eef5fb;
+    color:#222;
+    direction:rtl;
     text-align:center;
 }
 
-/* البانر */
-.hero{
-    background:linear-gradient(135deg,#005bbb,#00a6ff);
-    color:#fff;
-    padding:60px 20px;
+/* الشعار */
+
+.logo{
+    width:120px;
+    display:block;
+    margin:20px auto;
 }
 
-.hero h1{
-    margin:0;
-    font-size:36px;
-}
+/* الهيدر */
 
-.hero p{
-    margin:15px 0 30px;
-    font-size:20px;
-}
-
-/* الأزرار */
-.hero-buttons{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:15px;
-}
-
-.btn{
-    display:inline-block;
-    padding:14px 24px;
-    border-radius:10px;
-    color:#fff;
-    text-decoration:none;
-    font-weight:bold;
-    transition:.3s;
-    min-width:220px;
-}
-
-.btn:hover{
-    transform:translateY(-2px);
-    opacity:.9;
-}
-
-.map-btn{
-    background:#d32f2f;
-}
-
-.whatsapp-btn{
-    background:#25D366;
-}
-
-.facebook-btn{
-    background:#1877F2;
-}
-
-.btn:not(.map-btn):not(.whatsapp-btn):not(.facebook-btn){
+header{
     background:#0066cc;
+    color:#fff;
+    padding:35px 20px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+header h1{
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
 }
 
 /* الأقسام */
+
 section{
     background:#fff;
-    margin:20px auto;
-    padding:25px;
-    width:90%;
-    max-width:900px;
+    margin:18px;
+    padding:22px;
     border-radius:15px;
-    box-shadow:0 3px 12px rgba(0,0,0,.1);
+    box-shadow:0 3px 10px rgba(0,0,0,.10);
 }
 
 section h2{
     color:#0066cc;
-    margin-top:0;
+    margin-bottom:18px;
+}
+
+/* الوكلاء */
+
+.brands{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin:20px 0;
+}
+
+.brand{
+    width:110px;
+    background:#f7f7f7;
+    border-radius:15px;
+    padding:18px 10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.10);
+    transition:.3s;
+}
+
+.brand:hover{
+    transform:translateY(-5px);
+}
+
+.brand h3{
+    margin-top:10px;
+    font-size:18px;
+    color:#0066cc;
+}
+
+/* الأزرار */
+
+.btn{
+    display:block;
+    width:90%;
+    max-width:320px;
+    margin:12px auto;
+    padding:14px;
+    border-radius:12px;
+    text-decoration:none;
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+/* اتصال */
+
+.btn{
+    background:#007bff;
+}
+
+/* واتساب */
+
+.whatsapp{
+    background:#25D366;
+}
+
+/* فيسبوك */
+
+.facebook{
+    background:#1877F2;
+}
+
+/* الخريطة */
+
+.map{
+    background:#d32f2f;
+}
+
+/* حركة */
+
+.btn:hover{
+    opacity:.90;
+    transform:scale(1.02);
 }
 
 /* الفوتر */
+
 footer{
+    margin-top:25px;
     background:#0066cc;
     color:#fff;
     padding:20px;
-    margin-top:30px;
+    font-size:15px;
 }
 
 /* الموبايل */
-@media (max-width:768px){
 
-.hero{
-    padding:45px 15px;
+@media(max-width:600px){
+
+header h1{
+    font-size:24px;
 }
 
-.hero h1{
-    font-size:28px;
+header p{
+    font-size:16px;
 }
 
-.hero p{
-    font-size:17px;
-}
-
-.hero-buttons{
-    flex-direction:column;
-    align-items:center;
+.brand{
+    width:95px;
 }
 
 .btn{
-    width:90%;
-    max-width:320px;
+    font-size:16px;
 }
 
-section{
-    width:94%;
-    padding:20px;
+.logo{
+    width:95px;
 }
+
 }
