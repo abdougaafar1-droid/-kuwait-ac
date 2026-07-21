@@ -43,7 +43,7 @@ a {
     margin: 10px auto;
     border-radius: 8px;
     max-width: 300px;
-}
+    font-weight: bold;
 }
 
 footer {
@@ -52,28 +52,28 @@ footer {
     padding: 15px;
     margin-top: 20px;
 }
-.logo{
-    display:block;
-    width:120px !important;
-    max-width:120px !important;
-    height:auto !important;
-    margin:20px auto !important;
+
+.logo {
+    display: block;
+    width: 120px;
+    max-width: 120px;
+    height: auto;
+    margin: 20px auto;
 }
 
-.map-btn{
-    display:block;
-    width:220px;
-    margin:15px auto;
-    padding:12px;
-    text-align:center;
-    background:#d32f2f;
-    color:#fff;
-    text-decoration:none;
-    border-radius:10px;
-    font-weight:bold;
-    transition:0.3s;
+.map-btn {
+    display: block;
+    width: 220px;
+    margin: 15px auto;
+    padding: 12px;
+    text-align: center;
+    background: #d32f2f;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
-.map-btn:hover{
-    background:#b71c1c;
+.map-btn:hover {
+    background: #b71c1c;
 }
