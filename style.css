@@ -1,6 +1,6 @@
 /* ==========================
    شركة الكويت للتبريد والتكييف
-   الإصدار 2.0
+   الإصدار 2.1
 ========================== */
 
 *{
@@ -20,9 +20,11 @@ body{
 /* الشعار */
 
 .logo{
-    width:120px;
     display:block;
-    margin:20px auto;
+    width:90px !important;
+    max-width:90px !important;
+    height:auto !important;
+    margin:20px auto !important;
 }
 
 /* الهيدر */
@@ -103,36 +105,23 @@ section h2{
     font-size:18px;
     font-weight:bold;
     transition:.3s;
-}
-
-/* اتصال */
-
-.btn{
     background:#007bff;
 }
-
-/* واتساب */
 
 .whatsapp{
     background:#25D366;
 }
 
-/* فيسبوك */
-
 .facebook{
     background:#1877F2;
 }
-
-/* الخريطة */
 
 .map{
     background:#d32f2f;
 }
 
-/* حركة */
-
 .btn:hover{
-    opacity:.90;
+    opacity:.9;
     transform:scale(1.02);
 }
 
@@ -148,7 +137,7 @@ footer{
 
 /* الموبايل */
 
-@media(max-width:600px){
+@media (max-width:600px){
 
 header h1{
     font-size:24px;
@@ -167,7 +156,9 @@ header p{
 }
 
 .logo{
-    width:95px;
+    width:80px !important;
+    max-width:80px !important;
+    height:auto !important;
 }
 
 }
