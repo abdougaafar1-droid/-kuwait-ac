@@ -1,6 +1,6 @@
 /* ==========================
    شركة الكويت للتبريد والتكييف
-   الإصدار 3.1
+   الإصدار 4.0
 ========================== */
 
 *{
@@ -15,6 +15,7 @@ body{
     color:#222;
     direction:rtl;
     text-align:center;
+    line-height:1.7;
 }
 
 /* الشعار */
@@ -36,7 +37,7 @@ body{
     padding:70px 20px;
     border-bottom-left-radius:25px;
     border-bottom-right-radius:25px;
-    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    box-shadow:0 5px 15px rgba(0,0,0,.20);
 }
 
 .hero .overlay{
@@ -59,7 +60,9 @@ body{
     font-weight:normal;
 }
 
-/* الأقسام */
+/* ==========================
+   الأقسام
+========================== */
 
 section{
     background:#fff;
@@ -72,39 +75,58 @@ section{
 section h2{
     color:#0066cc;
     margin-bottom:18px;
+    font-size:28px;
 }
 
-/* الوكلاء */
+/* ==========================
+   الوكلاء
+========================== */
 
 .brands{
     display:flex;
     justify-content:center;
+    align-items:center;
     flex-wrap:wrap;
-    gap:15px;
-    margin:20px 0;
+    gap:25px;
+    margin:30px 0;
 }
 
 .brand{
-    width:110px;
-    background:#f7f7f7;
-    border-radius:15px;
-    padding:18px;
-    box-shadow:0 2px 8px rgba(0,0,0,.10);
+    width:220px;
+    background:#fff;
+    border-radius:18px;
+    padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.brand:hover{
+    transform:translateY(-5px);
+}
+
+.brand img{
+    width:170px;
+    height:80px;
+    object-fit:contain;
+    display:block;
+    margin:0 auto 12px;
 }
 
 .brand h3{
-    color:#0066cc;
-    margin-top:10px;
+    color:#0052cc;
+    font-size:22px;
 }
 
-/* الأزرار */
+/* ==========================
+   الأزرار
+========================== */
 
 .btn{
     display:block;
     width:90%;
-    max-width:320px;
+    max-width:340px;
     margin:12px auto;
-    padding:14px;
+    padding:15px;
     border-radius:12px;
     text-decoration:none;
     color:#fff;
@@ -115,7 +137,7 @@ section h2{
 }
 
 .btn:hover{
-    transform:scale(1.02);
+    transform:scale(1.03);
 }
 
 .whatsapp{
@@ -130,16 +152,21 @@ section h2{
     background:#d32f2f;
 }
 
-/* الفوتر */
+/* ==========================
+   الفوتر
+========================== */
 
 footer{
     margin-top:25px;
     background:#0066cc;
     color:#fff;
     padding:20px;
+    font-size:16px;
 }
 
-/* الموبايل */
+/* ==========================
+   الموبايل
+========================== */
 
 @media(max-width:768px){
 
@@ -156,19 +183,42 @@ footer{
 }
 
 .hero p{
-    font-size:17px;
+    font-size:18px;
 }
 
 .hero h3{
     font-size:15px;
 }
 
+section{
+    margin:15px 10px;
+    padding:20px;
+}
+
+section h2{
+    font-size:22px;
+}
+
 .brand{
-    width:95px;
+    width:170px;
+}
+
+.brand img{
+    width:130px;
+    height:60px;
+}
+
+.brand h3{
+    font-size:18px;
 }
 
 .btn{
+    width:95%;
     font-size:16px;
+}
+
+footer{
+    font-size:14px;
 }
 
 }
