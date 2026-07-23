@@ -1,6 +1,6 @@
 /* ==========================
    شركة الكويت للتبريد والتكييف
-   الإصدار 4.0
+   الإصدار 4.1
 ========================== */
 
 *{
@@ -87,34 +87,34 @@ section h2{
     justify-content:center;
     align-items:center;
     flex-wrap:wrap;
-    gap:25px;
-    margin:30px 0;
+    gap:12px;
+    margin:20px 0;
 }
 
 .brand{
-    width:220px;
+    width:170px;
     background:#fff;
-    border-radius:18px;
-    padding:20px;
-    box-shadow:0 5px 15px rgba(0,0,0,.12);
+    border-radius:15px;
+    padding:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,.10);
     transition:.3s;
 }
 
 .brand:hover{
-    transform:translateY(-5px);
+    transform:translateY(-3px);
 }
 
 .brand img{
-    width:170px;
-    height:80px;
+    width:130px;
+    height:60px;
     object-fit:contain;
     display:block;
-    margin:0 auto 12px;
+    margin:0 auto 10px;
 }
 
 .brand h3{
     color:#0052cc;
-    font-size:22px;
+    font-size:20px;
 }
 
 /* ==========================
@@ -137,7 +137,7 @@ section h2{
 }
 
 .btn:hover{
-    transform:scale(1.03);
+    transform:scale(1.02);
 }
 
 .whatsapp{
@@ -199,17 +199,22 @@ section h2{
     font-size:22px;
 }
 
+.brands{
+    gap:8px;
+}
+
 .brand{
-    width:170px;
+    width:95px;
+    padding:10px;
 }
 
 .brand img{
-    width:130px;
-    height:60px;
+    width:75px;
+    height:40px;
 }
 
 .brand h3{
-    font-size:18px;
+    font-size:15px;
 }
 
 .btn{
